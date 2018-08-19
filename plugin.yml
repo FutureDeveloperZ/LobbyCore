@@ -1,0 +1,57 @@
+name: LobbyCore
+version: 1.0.0
+api: [3.0.0-ALPHA12, 3.0.0, 3.0.1, 3.0.2, 4.0.0]
+main: FreeGamingHere\LobbyCore
+author: FreeGamingHere
+commands:
+    info:
+        description: Info About the Server
+        usage: "/info <ranks|server>"
+    size:
+        description: Change Your Size
+        usage: "/size <number>"
+    rmlc:
+        description: Get your XYZ
+        usage: "/rmlc"
+    rmsvr:
+        description: Get your Remote Server Key (Console Only)
+        usage: "/rmsvr"
+    fgh:
+        description: Get your XYZ
+        usage: "/fgh"
+    crash:
+        description: A Command
+        usage: "/crash <player>"
+permissions:
+    lobby.cosmetics:
+        default: op
+    lobby.music:
+        default: op
+    lobby.gadgets:
+        default: op
+    lobby.nick:
+        default: op
+    lobby.particles:
+        default: op
+    lobby.ranked:
+        default: op
+    lobby.sizes:
+        default: op
+    lobby.size.cmd:
+        default: op
+    lobby.crash:
+        default: op
+    lobby.boots:
+        default: op
+    lobby.build:
+        default: op
+    lobby.doublejump:
+        default: op
+    lobby.cape:
+        default: op
+    lobby.crate.mvp+:
+        default: op
+    lobby.premium:
+        default: op
+    lobby.rmsvr:
+        default: op
