@@ -1,0 +1,74 @@
+﻿---
+###############################
+# Configuration for LobbyCore #
+# Made by [YT] FreeGamingHere #
+###############################
+
+
+# Do not edit these lines! There are checking if the boxes are being opened by someone
+OpenChest1: false
+OpenChest2: false
+
+# The prefix before every message that is sent to the players
+Prefix: "§6§l[Pyro Network] "
+
+# The name of your server. Use on the MOTD
+ServerName: "§a§lPyro Network"
+
+# The status that will be displayed to the players that see your MOTD.
+Status: "§r§6MCPE 1.2.x Support!"
+
+# The reason the server is whitelisted
+WhitelistReason: "We are in maintenance mode, to fix some bugs..."
+
+# The message that will be displayed when someone runs the command /info ranks
+Ranks-Info: "Use the Rank Menu in your item bar to get informed about which features you unlock on each rank. The full list can be found on our website: www.somethingcraft.net"
+
+# The message that will be displayed when someone runs the command /info server
+Server-Info: "This server is running PocketMine-MP 1.7dev with LobbyCore made by FreeGamingHere. To get a list of commands do /help or /?. To transfer to a MiniGame server do /transferserver <ip> <port> or use the Compass"
+
+# The names of the teleport items
+Game-1-Name: "SkyWars"
+Game-2-Name: "SkyPvP"
+Game-3-Name: "Factions"
+Game-4-Name: "Pyro Strike"
+
+# The IP of the server the player will get transfered when he/she taps a teleport item
+Game-1-IP: "<IP> <PORT>"
+Game-2-IP: "<IP> <PORT>"
+Game-3-IP: "<IP> <PORT>"
+Game-4-IP: "<IP> <PORT>"
+
+# The IPs of the Lobbies
+Lobby-1-IP: "<IP> <PORT>"
+Lobby-2-IP: "<IP> <PORT>"
+PremiumLobby-IP: "<IP> <PORT>"
+
+# If this is disabled, the player will not get transfered to a server when he/she taps a teleport item, but he/she will get teleported to some specific coords
+TransferOnMiniGameItem: false
+
+# The coords the player will get teleported when he/she taps a teleport item
+Game-1-X: 0
+Game-1-Y: 0
+Game-1-Z: 0
+Game-2-X: 0
+Game-2-Y: 0
+Game-2-Z: 0
+Game-3-X: 0
+Game-3-Y: 0
+Game-3-Z: 0
+Game-4-X: 0
+Game-4-Y: 0
+Game-4-Z: 0
+
+# Default Nick (when the player uses the nick feature)
+DefaultNickName: "iAmNicked"
+
+# The coords of the Crates
+Crate-1-X: 0
+Crate-1-Y: 0
+Crate-1-Z: 0
+Crate-2-X: 0
+Crate-2-Y: 0
+Crate-2-Z: 0
+...
