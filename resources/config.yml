@@ -10,13 +10,13 @@ OpenChest1: false
 OpenChest2: false
 
 # The prefix before every message that is sent to the players
-Prefix: "§6§l[Pyro Network] "
+Prefix: "§e§lWolfGang§6MC Minigames§r "
 
 # The name of your server. Use on the MOTD
-ServerName: "§a§lPyro Network"
+ServerName: "§a§lWolfGangMC"
 
 # The status that will be displayed to the players that see your MOTD.
-Status: "§r§6MCPE 1.2.x Support!"
+Status: "§r§6MCPE 1.5.x Support!"
 
 # The reason the server is whitelisted
 WhitelistReason: "We are in maintenance mode, to fix some bugs..."
