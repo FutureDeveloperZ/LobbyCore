@@ -137,39 +137,23 @@ class LobbyCore extends PluginBase implements Listener {
 		//Config
 		@mkdir($this->getDataFolder());
 		$this->saveResource("config.yml");
-		$this->saveResource("key.yml");
 		$cfg = new Config($this->getDataFolder() . "config.yml", Config::YAML);
-		$key = new Config($this->getDataFolder() . "key.yml", Config::YAML);
 		
 		$prefix = $cfg->get("Prefix");
 		$network = $cfg->get("ServerName");
 		$status = $cfg->get("Status");
 		
-		if(empty($key->get("key"))){
-			
-			$this->getLogger()->info("Fatal error! Unallowed use of LobbyCore v1.0.0 by FreeGamingHere (@FreeGamingHere)! Please message him through Discord (FreeGamingHere#6456) to get the activation key!");
-			$this->getServer()->shutdown();
-			
-		} elseif($key->get("key") !== "marievi2012"){
-			
-			$this->getLogger()->info("Fatal error! Unallowed use of LobbyCore v1.0.0 by FreeGamingHere (@FreeGamingHere)! Please message him through Discord (FreeGamingHere#6456) to get the activation key!");
-			$this->getServer()->shutdown();
-			
-		} elseif($this->getDescription()->getAuthors()[0] !== "FreeGamingHere" or $this->getDescription()->getName() !== "LobbyCore"){
-			
-			$this->getLogger()->info("Fatal error! Unallowed use of LobbyCore v1.0.0 by FreeGamingHere (@FreeGamingHere)!");
-			$this->getServer()->shutdown();
+
 			
 		//} elseif(!file_exists($this->getServer()->getDataPath() . "plugins/LobbyCore_v1.0.0.phar")){
 			
 			//$this->getLogger()->info("Fatal error! Unallowed use of LobbyCore v1.0.0 by FreeGamingHere (@FreeGamingHere)!");
 			//$this->getServer()->shutdown();
 			
-		} else {
 			
 			$this->getServer()->getPluginManager()->registerEvents($this, $this);
 			
-			$this->getLogger()->info(TextFormat::GREEN . "LobbyCore by FreeGamingHere Enabled");
+			$this->getLogger()->info(TextFormat::GREEN . "LobbyCore Enabled");
 			
 			$this->ZMusicBox = $this->getServer()->getPluginManager()->getPlugin("ZMusicBox");
 			
@@ -193,7 +177,7 @@ class LobbyCore extends PluginBase implements Listener {
 			$cfg->set("OpenChest2", false);
 			$cfg->save();
 			
-		}
+		
 	}
 	
 	public function onDisable() {
